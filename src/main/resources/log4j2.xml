@@ -3,7 +3,7 @@
 
     <Properties>
         <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Property>
-        <Property name="LOG_PATH">/logs/mx-gateway</Property>
+        <Property name="LOG_PATH">logs/mx-gateway</Property>
         <Property name="LOG_FILE">mx-gateway</Property>
     </Properties>
 
@@ -30,7 +30,7 @@
             <AppenderRef ref="RollingFile"/>
         </Root>
 
-        <Logger name="com.example.mx_gateway" level="warn" additivity="false">
+        <Logger name="com.example.mx_gateway" level="info" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="RollingFile"/>
         </Logger>
